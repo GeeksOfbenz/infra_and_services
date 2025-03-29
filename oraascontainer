@@ -1,0 +1,1 @@
+ docker run --privileged --name oracle21c -p 1521:1521 -p 5500:5500 -e ORACLE_SID=orcl -e ORACLE_PWD=H@med5656nb -e INIT_SGA_SIZE=3000M -e INIT_PGA_SIZE=1000M -v /opt/oracle/oradata:/opt/oracle/oradata --ulimit nofile=65536:65536 -d oracle/database:21.3.0-ee
